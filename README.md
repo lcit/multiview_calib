@@ -1,6 +1,8 @@
 # Multiple view Camera calibration tool
 This tool allows to compute the intrinsic and extrinsic camera parameters of a set of synchronized cameras with overlapping field of view. The intrinsics estimation is based on the OpenCV's camera calibration framework and it is used on each camera separately. In the extrinsics estimation, an initial solution (extrinsic parameters) is computed first using a linear approach then refined using bundle adjustment.  The output are camera poses (intrinsic matrix, distortion parameters, rotations and translations) w.r.t. either the first camera or a global reference system.
 
+![alt text](https://github.com/lcit/multiview_calib/blob/master/images/visualisation.png?raw=true)
+
 ## Prerequisites
 
 - numpy
